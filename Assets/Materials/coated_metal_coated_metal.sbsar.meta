@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee6c373585117504f949ed8eb403d3d1
+guid: 62160a14f1a903d4ab6557f7ccd9d184
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,25 +11,25 @@ ScriptedImporter:
   version: 29
   projectContext: 0
   mGraphInstanceData:
-  - graphLabel: Concrete Bare
-    prototypeName: Concrete Bare
+  - graphLabel: Coated Metal
+    prototypeName: Coated Metal
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://concrete_bare\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"101298142\" type=\"8\" value=\"9,9\" />\n
+    preset: " <sbspreset pkgurl=\"pkg://coated_metal\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"566559813\" type=\"8\" value=\"9,9\" />\n
       </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-      shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+      shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
       customRenderQueue: -1
       texEnvs:
       - name: _BumpMap
-        texture: {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 6006883382987039510, guid: 62160a14f1a903d4ab6557f7ccd9d184,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -47,15 +47,15 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 0.2, y: 0.2}
+        scale: {x: 2, y: 2}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: -2930751646216863020, guid: 62160a14f1a903d4ab6557f7ccd9d184,
           type: 3}
-        scale: {x: 0.2, y: 0.2}
+        scale: {x: 2, y: 2}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 1934488569685197495, guid: 62160a14f1a903d4ab6557f7ccd9d184,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -64,8 +64,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _ParallaxMap
-        texture: {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1,
-          type: 3}
+        texture: {instanceID: 0}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       floats:
@@ -107,6 +106,15 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
     outputDescList:
+    - outputName: diffuse
+      identifier: diffuse
+      usageName: diffuse
+      channelStr: diffuse
+      label: Diffuse
+      usage: 0
+      bImage: 1
+      bNumerical: 0
+      bLinear: 0
     - outputName: baseColor
       identifier: basecolor
       usageName: baseColor
@@ -122,6 +130,24 @@ ScriptedImporter:
       channelStr: normal
       label: Normal
       usage: 7
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
+    - outputName: specular
+      identifier: specular
+      usageName: specular
+      channelStr: specular
+      label: Specular
+      usage: 11
+      bImage: 1
+      bNumerical: 0
+      bLinear: 0
+    - outputName: glossiness
+      identifier: glossiness
+      usageName: glossiness
+      channelStr: glossiness
+      label: Glossiness
+      usage: 14
       bImage: 1
       bNumerical: 0
       bLinear: 1
@@ -143,43 +169,12 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
-    - outputName: diffuse
-      identifier: diffuse
-      usageName: diffuse
-      channelStr: diffuse
-      label: Diffuse
-      usage: 0
-      bImage: 1
-      bNumerical: 0
-      bLinear: 0
-    - outputName: specular
-      identifier: specular
-      usageName: specular
-      channelStr: specular
-      label: Specular
-      usage: 11
-      bImage: 1
-      bNumerical: 0
-      bLinear: 0
-    - outputName: glossiness
-      identifier: glossiness
-      usageName: glossiness
-      channelStr: glossiness
-      label: Glossiness
-      usage: 14
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
-    - outputName: height
-      identifier: height
-      usageName: height
-      channelStr: height
-      label: Height
-      usage: 9
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
     texturePackingList:
+    - targetName: diffuse
+      components:
+      - sourceName: diffuse
+        from: 0
+        to: 3
     - targetName: baseColor
       components:
       - sourceName: baseColor
@@ -188,21 +183,6 @@ ScriptedImporter:
     - targetName: normal
       components:
       - sourceName: normal
-        from: 0
-        to: 3
-    - targetName: roughness
-      components:
-      - sourceName: roughness
-        from: 0
-        to: 3
-    - targetName: metallic
-      components:
-      - sourceName: smoothness
-        from: 0
-        to: 3
-    - targetName: diffuse
-      components:
-      - sourceName: diffuse
         from: 0
         to: 3
     - targetName: specular
@@ -215,41 +195,42 @@ ScriptedImporter:
       - sourceName: glossiness
         from: 0
         to: 3
-    - targetName: height
+    - targetName: roughness
       components:
-      - sourceName: height
+      - sourceName: roughness
+        from: 0
+        to: 3
+    - targetName: metallic
+      components:
+      - sourceName: smoothness
         from: 0
         to: 3
     textureParameters:
-    - textureName: Concrete Bare - baseColor
+    - textureName: Coated Metal - diffuse
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - normal
+    - textureName: Coated Metal - baseColor
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - roughness
+    - textureName: Coated Metal - normal
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - metallic
+    - textureName: Coated Metal - specular
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - diffuse
+    - textureName: Coated Metal - glossiness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - specular
+    - textureName: Coated Metal - roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - glossiness
-      wrapMode: 0
-      filterMode: 1
-      aniso: 1
-    - textureName: Concrete Bare - height
+    - textureName: Coated Metal - metallic
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -264,10 +245,9 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: -8327779615555753561, guid: ee6c373585117504f949ed8eb403d3d1,
+    material: {fileID: -1511348542346864231, guid: 62160a14f1a903d4ab6557f7ccd9d184,
       type: 3}
     generatedTextures:
-    - {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
+    - {fileID: -2930751646216863020, guid: 62160a14f1a903d4ab6557f7ccd9d184, type: 3}
+    - {fileID: 6006883382987039510, guid: 62160a14f1a903d4ab6557f7ccd9d184, type: 3}
+    - {fileID: 1934488569685197495, guid: 62160a14f1a903d4ab6557f7ccd9d184, type: 3}
