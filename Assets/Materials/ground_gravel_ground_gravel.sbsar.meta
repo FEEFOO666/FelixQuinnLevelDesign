@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee6c373585117504f949ed8eb403d3d1
+guid: 2664b68ca111d3a489e43b9df83f3dae
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,25 +11,23 @@ ScriptedImporter:
   version: 29
   projectContext: 0
   mGraphInstanceData:
-  - graphLabel: Concrete Bare
-    prototypeName: Concrete Bare
+  - graphLabel: Ground Gravel
+    prototypeName: Ground Gravel
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://concrete_bare\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"101298142\" type=\"8\" value=\"9,9\" />\n
-      </sbspreset>\n"
+    preset: " <sbspreset pkgurl=\"pkg://ground_gravel\" label=\"\" >\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-      shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
+      shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP _OCCLUSIONMAP _PARALLAXMAP
       lightmapFlags: 4
       enableInstancingVariants: 0
       doubleSidedGI: 0
       customRenderQueue: -1
       texEnvs:
       - name: _BumpMap
-        texture: {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 589479051177660224, guid: 2664b68ca111d3a489e43b9df83f3dae,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -50,21 +48,22 @@ ScriptedImporter:
         scale: {x: 0.2, y: 0.2}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 910982408923158650, guid: 2664b68ca111d3a489e43b9df83f3dae,
           type: 3}
         scale: {x: 0.2, y: 0.2}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 3775951078227501420, guid: 2664b68ca111d3a489e43b9df83f3dae,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _OcclusionMap
-        texture: {instanceID: 0}
+        texture: {fileID: -7648312581756838493, guid: 2664b68ca111d3a489e43b9df83f3dae,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _ParallaxMap
-        texture: {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: -5968193454086163043, guid: 2664b68ca111d3a489e43b9df83f3dae,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -107,48 +106,21 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
     outputDescList:
-    - outputName: baseColor
-      identifier: basecolor
-      usageName: baseColor
-      channelStr: baseColor
-      label: Base Color
-      usage: 1
-      bImage: 1
-      bNumerical: 0
-      bLinear: 0
-    - outputName: normal
-      identifier: normal
-      usageName: normal
-      channelStr: normal
-      label: Normal
-      usage: 7
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
-    - outputName: roughness
-      identifier: roughness
-      usageName: roughness
-      channelStr: roughness
-      label: Roughness
-      usage: 15
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
-    - outputName: metallic
-      identifier: metallic
-      usageName: metallic
-      channelStr: metallic
-      label: Metallic
-      usage: 34
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
     - outputName: diffuse
       identifier: diffuse
       usageName: diffuse
       channelStr: diffuse
       label: Diffuse
       usage: 0
+      bImage: 1
+      bNumerical: 0
+      bLinear: 0
+    - outputName: baseColor
+      identifier: basecolor
+      usageName: baseColor
+      channelStr: baseColor
+      label: Base Color
+      usage: 1
       bImage: 1
       bNumerical: 0
       bLinear: 0
@@ -170,6 +142,33 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
+    - outputName: roughness
+      identifier: roughness
+      usageName: roughness
+      channelStr: roughness
+      label: Roughness
+      usage: 15
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
+    - outputName: metallic
+      identifier: metallic
+      usageName: metallic
+      channelStr: metallic
+      label: Metallic
+      usage: 34
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
+    - outputName: ambientOcclusion
+      identifier: ambient_occlusion
+      usageName: ambientOcclusion
+      channelStr: ambientOcclusion
+      label: Ambient Occlusion
+      usage: 5
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
     - outputName: height
       identifier: height
       usageName: height
@@ -179,30 +178,24 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
+    - outputName: normal
+      identifier: normal
+      usageName: normal
+      channelStr: normal
+      label: Normal
+      usage: 7
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
     texturePackingList:
-    - targetName: baseColor
-      components:
-      - sourceName: baseColor
-        from: 0
-        to: 3
-    - targetName: normal
-      components:
-      - sourceName: normal
-        from: 0
-        to: 3
-    - targetName: roughness
-      components:
-      - sourceName: roughness
-        from: 0
-        to: 3
-    - targetName: metallic
-      components:
-      - sourceName: smoothness
-        from: 0
-        to: 3
     - targetName: diffuse
       components:
       - sourceName: diffuse
+        from: 0
+        to: 3
+    - targetName: baseColor
+      components:
+      - sourceName: baseColor
         from: 0
         to: 3
     - targetName: specular
@@ -215,41 +208,65 @@ ScriptedImporter:
       - sourceName: glossiness
         from: 0
         to: 3
+    - targetName: roughness
+      components:
+      - sourceName: roughness
+        from: 0
+        to: 3
+    - targetName: metallic
+      components:
+      - sourceName: smoothness
+        from: 0
+        to: 3
+    - targetName: ambientOcclusion
+      components:
+      - sourceName: ambientOcclusion
+        from: 0
+        to: 3
     - targetName: height
       components:
       - sourceName: height
         from: 0
         to: 3
+    - targetName: normal
+      components:
+      - sourceName: normal
+        from: 0
+        to: 3
     textureParameters:
-    - textureName: Concrete Bare - baseColor
+    - textureName: Ground Gravel - diffuse
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - normal
+    - textureName: Ground Gravel - baseColor
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - roughness
+    - textureName: Ground Gravel - specular
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - metallic
+    - textureName: Ground Gravel - glossiness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - diffuse
+    - textureName: Ground Gravel - roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - specular
+    - textureName: Ground Gravel - metallic
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - glossiness
+    - textureName: Ground Gravel - ambientOcclusion
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - height
+    - textureName: Ground Gravel - height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Ground Gravel - normal
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -264,10 +281,11 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: -8327779615555753561, guid: ee6c373585117504f949ed8eb403d3d1,
+    material: {fileID: -846394665745303262, guid: 2664b68ca111d3a489e43b9df83f3dae,
       type: 3}
     generatedTextures:
-    - {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
+    - {fileID: 910982408923158650, guid: 2664b68ca111d3a489e43b9df83f3dae, type: 3}
+    - {fileID: 3775951078227501420, guid: 2664b68ca111d3a489e43b9df83f3dae, type: 3}
+    - {fileID: -7648312581756838493, guid: 2664b68ca111d3a489e43b9df83f3dae, type: 3}
+    - {fileID: -5968193454086163043, guid: 2664b68ca111d3a489e43b9df83f3dae, type: 3}
+    - {fileID: 589479051177660224, guid: 2664b68ca111d3a489e43b9df83f3dae, type: 3}

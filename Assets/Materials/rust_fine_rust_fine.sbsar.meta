@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee6c373585117504f949ed8eb403d3d1
+guid: 0511a5f788731e74d81c83d61efeab9a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,13 +11,13 @@ ScriptedImporter:
   version: 29
   projectContext: 0
   mGraphInstanceData:
-  - graphLabel: Concrete Bare
-    prototypeName: Concrete Bare
+  - graphLabel: Rust Fine
+    prototypeName: Rust Fine
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://concrete_bare\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"101298142\" type=\"8\" value=\"9,9\" />\n
+    preset: " <sbspreset pkgurl=\"pkg://rust_fine\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1550440243\" type=\"8\" value=\"9,9\" />\n
       </sbspreset>\n"
     shaderName: Standard
     materialProperties:
@@ -29,7 +29,7 @@ ScriptedImporter:
       customRenderQueue: -1
       texEnvs:
       - name: _BumpMap
-        texture: {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 3445052190880981222, guid: 0511a5f788731e74d81c83d61efeab9a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -50,12 +50,12 @@ ScriptedImporter:
         scale: {x: 0.2, y: 0.2}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 8392586162974947167, guid: 0511a5f788731e74d81c83d61efeab9a,
           type: 3}
         scale: {x: 0.2, y: 0.2}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 5129605899458862307, guid: 0511a5f788731e74d81c83d61efeab9a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -64,7 +64,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _ParallaxMap
-        texture: {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1,
+        texture: {fileID: 6074066561519888220, guid: 0511a5f788731e74d81c83d61efeab9a,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -107,48 +107,21 @@ ScriptedImporter:
       - name: _EmissionColor
         color: {r: 0, g: 0, b: 0, a: 1}
     outputDescList:
-    - outputName: baseColor
-      identifier: basecolor
-      usageName: baseColor
-      channelStr: baseColor
-      label: Base Color
-      usage: 1
-      bImage: 1
-      bNumerical: 0
-      bLinear: 0
-    - outputName: normal
-      identifier: normal
-      usageName: normal
-      channelStr: normal
-      label: Normal
-      usage: 7
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
-    - outputName: roughness
-      identifier: roughness
-      usageName: roughness
-      channelStr: roughness
-      label: Roughness
-      usage: 15
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
-    - outputName: metallic
-      identifier: metallic
-      usageName: metallic
-      channelStr: metallic
-      label: Metallic
-      usage: 34
-      bImage: 1
-      bNumerical: 0
-      bLinear: 1
     - outputName: diffuse
       identifier: diffuse
       usageName: diffuse
       channelStr: diffuse
       label: Diffuse
       usage: 0
+      bImage: 1
+      bNumerical: 0
+      bLinear: 0
+    - outputName: baseColor
+      identifier: basecolor
+      usageName: baseColor
+      channelStr: baseColor
+      label: Base Color
+      usage: 1
       bImage: 1
       bNumerical: 0
       bLinear: 0
@@ -170,6 +143,24 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
+    - outputName: roughness
+      identifier: roughness
+      usageName: roughness
+      channelStr: roughness
+      label: Roughness
+      usage: 15
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
+    - outputName: metallic
+      identifier: metallic
+      usageName: metallic
+      channelStr: metallic
+      label: Metallic
+      usage: 34
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
     - outputName: height
       identifier: height
       usageName: height
@@ -179,30 +170,24 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
+    - outputName: normal
+      identifier: normal
+      usageName: normal
+      channelStr: normal
+      label: Normal
+      usage: 7
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
     texturePackingList:
-    - targetName: baseColor
-      components:
-      - sourceName: baseColor
-        from: 0
-        to: 3
-    - targetName: normal
-      components:
-      - sourceName: normal
-        from: 0
-        to: 3
-    - targetName: roughness
-      components:
-      - sourceName: roughness
-        from: 0
-        to: 3
-    - targetName: metallic
-      components:
-      - sourceName: smoothness
-        from: 0
-        to: 3
     - targetName: diffuse
       components:
       - sourceName: diffuse
+        from: 0
+        to: 3
+    - targetName: baseColor
+      components:
+      - sourceName: baseColor
         from: 0
         to: 3
     - targetName: specular
@@ -215,41 +200,56 @@ ScriptedImporter:
       - sourceName: glossiness
         from: 0
         to: 3
+    - targetName: roughness
+      components:
+      - sourceName: roughness
+        from: 0
+        to: 3
+    - targetName: metallic
+      components:
+      - sourceName: smoothness
+        from: 0
+        to: 3
     - targetName: height
       components:
       - sourceName: height
         from: 0
         to: 3
+    - targetName: normal
+      components:
+      - sourceName: normal
+        from: 0
+        to: 3
     textureParameters:
-    - textureName: Concrete Bare - baseColor
+    - textureName: Rust Fine - diffuse
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - normal
+    - textureName: Rust Fine - baseColor
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - roughness
+    - textureName: Rust Fine - specular
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - metallic
+    - textureName: Rust Fine - glossiness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - diffuse
+    - textureName: Rust Fine - roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - specular
+    - textureName: Rust Fine - metallic
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - glossiness
+    - textureName: Rust Fine - height
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Concrete Bare - height
+    - textureName: Rust Fine - normal
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -264,10 +264,10 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: -8327779615555753561, guid: ee6c373585117504f949ed8eb403d3d1,
+    material: {fileID: -69671423412010183, guid: 0511a5f788731e74d81c83d61efeab9a,
       type: 3}
     generatedTextures:
-    - {fileID: -5836815715258566235, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 558677837943628171, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 2197781091800950242, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
-    - {fileID: 7259018927521425245, guid: ee6c373585117504f949ed8eb403d3d1, type: 3}
+    - {fileID: 8392586162974947167, guid: 0511a5f788731e74d81c83d61efeab9a, type: 3}
+    - {fileID: 5129605899458862307, guid: 0511a5f788731e74d81c83d61efeab9a, type: 3}
+    - {fileID: 6074066561519888220, guid: 0511a5f788731e74d81c83d61efeab9a, type: 3}
+    - {fileID: 3445052190880981222, guid: 0511a5f788731e74d81c83d61efeab9a, type: 3}
