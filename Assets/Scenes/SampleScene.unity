@@ -1548,7 +1548,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 402394826}
 --- !u!114 &68587009
@@ -3738,7 +3738,7 @@ PrefabInstance:
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 82
+      value: 91.68
       objectReference: {fileID: 0}
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
@@ -3748,7 +3748,7 @@ PrefabInstance:
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.18
+      value: 38.82
       objectReference: {fileID: 0}
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
@@ -3793,7 +3793,7 @@ PrefabInstance:
     - target: {fileID: 3865307284308208298, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3865307284308208299, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
@@ -3841,7 +3841,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -4097,7 +4097,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -4154,7 +4154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147330809}
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.459999, y: -7.469998, z: 4.210001}
+  m_LocalPosition: {x: 14.459999, y: -7.32, z: 4.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 68373225}
@@ -4295,7 +4295,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -4717,7 +4717,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -5829,7 +5829,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 40
   m_InnerSpotAngle: 4
@@ -13623,7 +13623,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -15151,7 +15151,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -15413,7 +15413,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -18914,8 +18914,8 @@ GameObject:
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &756578198
 MeshCollider:
@@ -18928,7 +18928,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 172355175}
 --- !u!114 &756578199
@@ -25762,7 +25762,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 41283390}
 --- !u!114 &913957726
@@ -30232,7 +30232,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -34317,7 +34317,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 40
   m_InnerSpotAngle: 4
@@ -34669,7 +34669,7 @@ GameObject:
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1264190963
@@ -34697,7 +34697,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 432563193}
 --- !u!114 &1264190965
@@ -39750,7 +39750,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -39996,7 +39996,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -44988,7 +44988,7 @@ GameObject:
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1474608563
@@ -45016,7 +45016,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1091204681}
 --- !u!114 &1474608565
@@ -50716,7 +50716,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 1885419553}
 --- !u!114 &1831981775
@@ -52320,7 +52320,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6
+  m_Intensity: 3
   m_Range: 16
   m_SpotAngle: 37
   m_InnerSpotAngle: 21.80208
@@ -53574,6 +53574,11 @@ PrefabInstance:
     - target: {fileID: 4341738528604915592, guid: f55a6cbde235c4c39a4056b6dedb7f98,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4341738528604915599, guid: f55a6cbde235c4c39a4056b6dedb7f98,
+        type: 3}
+      propertyPath: m_IsKinematic
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4341738528604915604, guid: f55a6cbde235c4c39a4056b6dedb7f98,
@@ -56958,7 +56963,7 @@ PrefabInstance:
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 51.93
+      value: 83.51
       objectReference: {fileID: 0}
     - target: {fileID: 3865307284308208296, guid: 6f81612b9787d4ffb88f56609ec48f6b,
         type: 3}
